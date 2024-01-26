@@ -1,5 +1,8 @@
+#include <AvailabilityMacros.h>
 #include <mach/mach.h>
-//#include <Carbon/Carbon.h>
+#if MAC_OS_X_VERSION_MIN_REQUIRED < 1090
+#include <Carbon/Carbon.h>
+#endif
 #include <IOKit/IOKitLib.h>
 #include <CoreFoundation/CoreFoundation.h>
 
